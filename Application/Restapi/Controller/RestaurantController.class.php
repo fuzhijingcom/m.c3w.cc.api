@@ -8,8 +8,26 @@ class RestaurantController extends Controller {
     	
     	$id = I('restaurant_id/d');
 		
+		$res = M('sj_m_info')->where('id',$id)->find();
+	
+		if($res){
+			echo $res['info'];
+			exit;
+		}
+
 		if($id !== 1){
+
 			$id = 1;
+
+			// $url = "http://restapi.ele.me/shopping/restaurant/".$id."?extras[]=activities&extras[]=albums&extras[]=license&extras[]=identification&extras[]=qualification";
+			// $ch = curl_init();
+			// curl_setopt($ch, CURLOPT_URL, $url);
+			// curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+			// curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+			// $out = curl_exec($ch);
+			// curl_close($ch);
+			// echo $out;
+			// exit;
 		}
 
 

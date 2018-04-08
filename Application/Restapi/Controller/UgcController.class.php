@@ -2,7 +2,9 @@
 namespace Restapi\Controller;
 use Think\Controller;
 class UgcController extends Controller {
-
+	/**
+	 * 评价
+	 */
     public function v2(){
       
     	$restaurants = I('restaurants');

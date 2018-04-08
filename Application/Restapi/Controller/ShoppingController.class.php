@@ -3,6 +3,9 @@ namespace Restapi\Controller;
 use Think\Controller;
 
 class ShoppingController extends Controller {
+	/**
+	 * 商品详情
+	 */
     public function v2(){
     	header("Content-type: text/html; charset=utf-8");
     	$menu= I('menu');
